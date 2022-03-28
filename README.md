@@ -1,3 +1,3 @@
 # Puhu-TV-Mini-Project
 
-Made for ANKA DSC Solution Challange
+Made for ANKA DSC Solution Challenge
