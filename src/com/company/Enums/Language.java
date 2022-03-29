@@ -6,5 +6,6 @@ public enum Language
     TURKISH,
     SPANISH,
     CHINESE,
-    GERMAN
+    GERMAN,
+    RUSSIAN
 }

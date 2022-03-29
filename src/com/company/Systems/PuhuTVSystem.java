@@ -2,10 +2,33 @@ package com.company.Systems;
 
 import com.company.Entities.FilmList;
 import com.company.Entities.PuhuTV;
+import com.company.Helpers.Console;
 
 public final class PuhuTVSystem
 {
     private PuhuTVSystem(){}
+
+    public static void showFilmLists(PuhuTV puhuTV)
+    {
+        if (puhuTV == null)
+        {
+            Console.printError("PuhuTv is Null!");
+            return;
+        }
+
+        Console.printLine();
+
+        System.out.println("Film Lists:");
+
+        int i = 1;
+        for (var filmList : puhuTV.getFilmLists())
+        {
+            System.out.printf("(%d)-%s%n", i, filmList);
+            i++;
+        }
+
+        Console.printLine();
+    }
 
     public static void addFilmList(FilmList filmList, PuhuTV puhuTV)
     {

@@ -2,10 +2,33 @@ package com.company.Systems;
 
 import com.company.Entities.Film;
 import com.company.Entities.FilmList;
+import com.company.Helpers.Console;
 
 public final class FilmListSystem
 {
     private FilmListSystem(){}
+
+    public static void showFilms(FilmList filmList)
+    {
+        if (filmList == null)
+        {
+            Console.printError("The List is Null!");
+            return;
+        }
+
+        Console.printLine();
+
+        System.out.printf("Films in %s:%n", filmList);
+
+        int i = 1;
+        for (var film : filmList.getFilms())
+        {
+            System.out.printf("(%d)-%s%n", i, film);
+            i++;
+        }
+
+        Console.printLine();
+    }
 
     public static void addFilm(Film film, FilmList filmList)
     {

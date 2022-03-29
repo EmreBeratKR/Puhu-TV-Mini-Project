@@ -3,6 +3,7 @@ package com.company.Enums;
 public enum FilmCategory
 {
     ACTION,
+    ADVENTURE,
     DRAMA,
     THRILLER,
     COMEDY,

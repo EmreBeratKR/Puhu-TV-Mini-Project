@@ -10,6 +10,20 @@ public class Duration
     private final int seconds;
 
 
+    public Duration(int hours)
+    {
+        this.hours = hours;
+        this.minutes = 0;
+        this.seconds = 0;
+    }
+
+    public Duration(int hours, int minutes)
+    {
+        this.hours = hours;
+        this.minutes = minutes;
+        this.seconds = 0;
+    }
+
     public Duration(int hours, int minutes, int seconds)
     {
         this.hours = hours;
@@ -19,22 +33,26 @@ public class Duration
 
     public int getHours()
     {
-        return hours;
+        return this.hours;
     }
 
     public int getMinutes()
     {
-        return minutes;
+        return this.minutes;
     }
 
     public int getSeconds()
     {
-        return seconds;
+        return this.seconds;
     }
 
     @Override
     public String toString()
     {
-        return hours + ":" + minutes + ":" + seconds;
+        var strHours = this.hours > 10 ? this.hours + "" : "0" + this.hours;
+        var strMinutes = this.minutes > 10 ? this.minutes + "" : "0" + this.minutes;
+        var strSeconds = this.seconds > 10 ? this.seconds + "" : "0" + this.seconds;
+
+        return strHours + ":" + strMinutes + ":" + strSeconds;
     }
 }
