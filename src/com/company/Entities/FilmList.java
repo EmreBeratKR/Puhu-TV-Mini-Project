@@ -5,8 +5,9 @@ import java.util.ArrayList;
 public class FilmList
 {
     private final int id;
-    private final String title;
+    private String title;
     private ArrayList<Film> films;
+
 
     public FilmList(int id, String title)
     {
@@ -14,6 +15,7 @@ public class FilmList
         this.title = title;
         films = new ArrayList<>();
     }
+
 
     public int getId()
     {
@@ -23,6 +25,11 @@ public class FilmList
     public String getTitle()
     {
         return this.title;
+    }
+
+    public void setTitle(String title)
+    {
+        this.title = title;
     }
 
     public ArrayList<Film> getFilms()

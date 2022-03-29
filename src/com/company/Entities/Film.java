@@ -8,14 +8,15 @@ import com.company.Enums.Language;
 public class Film
 {
     private final int id;
-    private final String name;
-    private final String description;
-    private final FilmCategory[] categories;
-    private final Language[] languages;
-    private final int year;
-    private final Duration duration;
-    private final Director director;
-    private final Actor[] actors;
+    private String name;
+    private String description;
+    private FilmCategory[] categories;
+    private Language[] languages;
+    private int year;
+    private Duration duration;
+    private Director director;
+    private Actor[] actors;
+
 
     public Film(int id, String name)
     {
@@ -43,6 +44,7 @@ public class Film
         this.actors = actors;
     }
 
+
     public int getId()
     {
         return this.id;
@@ -53,9 +55,19 @@ public class Film
         return this.name;
     }
 
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
     public String getDescription()
     {
         return this.description;
+    }
+
+    public void setDescription(String description)
+    {
+        this.description = description;
     }
 
     public FilmCategory[] getCategories()
@@ -63,9 +75,19 @@ public class Film
         return this.categories;
     }
 
+    public void setCategories(FilmCategory[] categories)
+    {
+        this.categories = categories;
+    }
+
     public Language[] getLanguages()
     {
         return this.languages;
+    }
+
+    public void setLanguages(Language[] languages)
+    {
+        this.languages = languages;
     }
 
     public int getYear()
@@ -73,9 +95,19 @@ public class Film
         return this.year;
     }
 
+    public void setYear(int year)
+    {
+        this.year = year;
+    }
+
     public Duration getDuration()
     {
         return this.duration;
+    }
+
+    public void setDuration(Duration duration)
+    {
+        this.duration = duration;
     }
 
     public Director getDirector()
@@ -83,9 +115,19 @@ public class Film
         return this.director;
     }
 
+    public void setDirector(Director director)
+    {
+        this.director = director;
+    }
+
     public Actor[] getActors()
     {
         return this.actors;
+    }
+
+    public void setActors(Actor[] actors)
+    {
+        this.actors = actors;
     }
 
     @Override

@@ -31,6 +31,7 @@ public class Duration
         this.seconds = seconds;
     }
 
+
     public int getHours()
     {
         return this.hours;

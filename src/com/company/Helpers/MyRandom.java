@@ -9,6 +9,7 @@ public final class MyRandom
 
     private MyRandom(){}
 
+
     public static int Range(int minInclusive, int maxInclusive)
     {
         return randomizer.nextInt(minInclusive, maxInclusive+1);

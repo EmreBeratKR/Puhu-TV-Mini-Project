@@ -9,11 +9,13 @@ public class PuhuTV
     private final int sessionId;
     private ArrayList<FilmList> filmLists;
 
+
     public PuhuTV()
     {
         sessionId = MyRandom.Range(0, 10000);
         filmLists = new ArrayList<>();
     }
+
 
     public int getSessionId()
     {

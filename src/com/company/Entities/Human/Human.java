@@ -4,9 +4,9 @@ import com.company.Enums.Gender;
 
 public abstract class Human
 {
-    private final String name;
-    private final int age;
-    private final Gender gender;
+    private String name;
+    private int age;
+    private Gender gender;
 
 
     protected Human(String name, int age, Gender gender)
@@ -16,14 +16,34 @@ public abstract class Human
         this.gender = gender;
     }
 
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
     public int getAge()
     {
         return this.age;
     }
 
+    public void setAge(int age)
+    {
+        this.age = age;
+    }
+
     public Gender getGender()
     {
         return this.gender;
+    }
+
+    public void setGender(Gender gender)
+    {
+        this.gender = gender;
     }
 
     @Override
